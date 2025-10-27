@@ -2,6 +2,29 @@
 
 This guide walks you through setting up the Medusa-Strapi integration from scratch.
 
+## 🚨 Critical: Read This First
+
+**IMPORTANT**: Before starting, understand which packages can be installed from npm vs which must be cloned:
+
+| Component | Installation Method | Repository |
+|-----------|---------------------|------------|
+| **Medusa Plugin** (`medusa-plugin-strapi-ts`) | ✅ **npm install** | `yarn add medusa-plugin-strapi-ts` |
+| **Strapi Application** (`medusa-strapi`) | ❌ **Must clone repo** | Clone [SGFGOV](https://github.com/SGFGOV/medusa-strapi-repo) or [Fork](https://github.com/dannycdannydo/medusa-strapi-repo) |
+| **Strapi Plugins** | ✅ npm or included in monorepo | Already in cloned repo |
+
+**Why?**
+- The **Medusa plugin** is published to npm and identical in both repositories
+- The **Strapi application** is NOT published to npm (marked as `"private": true`)
+- The fork has 45 additional commits with custom content types and features
+
+**See**: [Complete Package Installation Guide](./PACKAGE-VERSIONS.md) for detailed breakdown.
+
+**Choose Your Path**:
+- **Original Repository** → Simple setup, core features only
+- **Fork Repository** → Production-ready with 14 additional content types
+
+---
+
 ## Prerequisites
 
 Before you begin, ensure you have:

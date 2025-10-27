@@ -127,8 +127,12 @@ While powerful, this adds complexity:
 
 ### 5-Minute Setup Overview
 
+**⚠️ Important**: Choose which repository to clone based on your needs. See [Package Versions Guide](./PACKAGE-VERSIONS.md).
+
+#### Option A: Original (Simple Setup)
+
 ```bash
-# 1. Clone and set up Strapi template
+# 1. Clone original Strapi template
 git clone https://github.com/SGFGOV/medusa-strapi-repo.git
 cd medusa-strapi-repo/packages/medusa-strapi
 cp .env.test .env
@@ -141,7 +145,7 @@ yarn build
 # 3. Start Strapi server
 yarn develop  # Port 1337
 
-# 4. Install Medusa plugin
+# 4. Install Medusa plugin (from npm)
 cd /path/to/medusa-backend
 yarn add medusa-plugin-strapi-ts
 
@@ -156,12 +160,55 @@ npx medusa develop  # Port 9000
 # Create product in Medusa → Check Strapi Admin at http://localhost:1337/admin
 ```
 
+#### Option B: Fork (Enhanced Setup)
+
+```bash
+# 1. Clone fork Strapi template (with extra features)
+git clone https://github.com/dannycdannydo/medusa-strapi-repo.git
+cd medusa-strapi-repo/packages/medusa-strapi
+cp .env.test .env
+# Configure environment variables (see detailed guide)
+
+# 2. Build Strapi packages
+yarn install
+yarn build
+
+# 3. Start Strapi server
+yarn dev  # Port 1337 (note: different script name)
+
+# 4. Install Medusa plugin (from npm - works with both)
+cd /path/to/medusa-backend
+yarn add medusa-plugin-strapi-ts
+
+# 5-7. Same as Option A
+```
+
 **For detailed instructions**: See [Implementation Guide](./04-implementation.md)
+
+## 🚨 Important: Repository & Package Clarification
+
+**CRITICAL**: Before proceeding, understand which packages you can install from npm vs which must be cloned locally.
+
+### Repository Information
+
+- **Original**: [SGFGOV/medusa-strapi-repo](https://github.com/SGFGOV/medusa-strapi-repo) - 719 commits
+- **Fork**: [dannycdannydo/medusa-strapi-repo](https://github.com/dannycdannydo/medusa-strapi-repo) - 764 commits (+45 additional commits)
+
+### Package Installation Guide
+
+| Package | Can Use npm? | Notes |
+|---------|--------------|-------|
+| `medusa-plugin-strapi-ts` | ✅ **YES** | Identical in both repos, use `yarn add medusa-plugin-strapi-ts` |
+| `medusa-strapi` (Strapi app) | ❌ **NO** | Must clone repository, not published to npm |
+| `strapi-plugin-medusajs` | ✅ **YES** | Can use npm or included in monorepo |
+| `strapi-plugin-sso-medusa` | ✅ **YES** | Can use npm or included in monorepo |
+
+**See**: **[Complete Package Installation Guide](./PACKAGE-VERSIONS.md)** for detailed instructions on npm vs local installation.
 
 ## Production Examples & Enhanced Fork
 
 While this documentation references the official [SGFGOV/medusa-strapi-repo](https://github.com/SGFGOV/medusa-strapi-repo), 
-a **production-ready fork with 45+ additional commits** and enhanced features is available in the `medusa-with-strapi-dannycdannydo` directory.
+a **production-ready fork with 45+ additional commits** and enhanced features is available at [dannycdannydo/medusa-strapi-repo](https://github.com/dannycdannydo/medusa-strapi-repo).
 
 ### Additional Features in Production Fork
 
@@ -469,8 +516,10 @@ When a customer views a product page:
 - [Medusa v1 Documentation](https://docs.medusajs.com/v1/)
 - [Strapi v4 Documentation](https://docs.strapi.io/dev-docs/intro)
 - [Medusa Strapi Plugin (Community)](https://docs.medusajs.com/v1/plugins/cms/strapi)
-- [GitHub Repository (Original)](https://github.com/SGFGOV/medusa-strapi-repo)
-- [Production Fork Reference](../medusa-examples/medusa-with-strapi-dannycdannydo/) - Enhanced version with 45+ additional commits
+- [GitHub Repository (Original)](https://github.com/SGFGOV/medusa-strapi-repo) - 719 commits
+- [GitHub Repository (Fork)](https://github.com/dannycdannydo/medusa-strapi-repo) - 764 commits (+45 additional)
+- [Package Installation Guide](./PACKAGE-VERSIONS.md) - **Critical**: npm vs local installation
+- [npm: medusa-plugin-strapi-ts](https://www.npmjs.com/package/medusa-plugin-strapi-ts)
 
 ### Community
 
