@@ -325,7 +325,7 @@ When a customer views a product:
 
 Found an issue or want to improve this documentation?
 
-1. Check existing examples in `https://github.com/medusajs/examples/medusa-examples/payload-integration`
+1. Check existing examples in `https://github.com/medusajs/examples/tree/main/payload-integration`
 2. Test changes thoroughly
 3. Update documentation to reflect changes
 4. Submit pull request with clear description
