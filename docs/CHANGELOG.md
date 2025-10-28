@@ -1,6 +1,6 @@
 # Documentation Changelog
 
-## January 2025 - CMS Comparison Consolidation
+## October 2025 - CMS Comparison Consolidation
 
 ### Summary
 
@@ -115,7 +115,6 @@ Users can reach the comparison guide from:
 
 ---
 
-**Date:** January 28, 2025  
-**Author:** Documentation Update  
+**Date:** October 28, 2025  
 **Version:** 1.0
 
