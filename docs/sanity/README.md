@@ -298,23 +298,18 @@ When a customer views a product page:
    - Avoiding external dependencies
    - Minimizing API calls
 
-## Comparison: Sanity vs Payload Integration
+## Comparison with Other CMS Options
 
-| Feature | Sanity | Payload |
-|---------|--------|---------|
-| **Deployment** | External SaaS | Embedded in Next.js |
-| **Data Storage** | Sanity Cloud | Your PostgreSQL |
-| **Admin UI** | Sanity Studio | Payload Admin |
-| **Pricing** | Free tier + usage-based | Self-hosted (free) |
-| **Content Model** | Lightweight (specs, addons) | Comprehensive (images, SEO, rich content) |
-| **Localization** | Built-in support | Custom implementation |
-| **Data Fetching** | Dual fetch (Medusa + Sanity) | Single fetch via Medusa link |
-| **Real-time Collab** | Yes | No |
-| **Setup Complexity** | Medium (external account) | Medium (embedded) |
-| **Vendor Lock-in** | Yes (Sanity) | No (self-hosted) |
+**Looking to compare Sanity with other CMS options?**
 
-**Choose Sanity if**: You need localization, real-time collaboration, or prefer managed CMS.  
-**Choose Payload if**: You want full control, integrated data fetching, or self-hosting.
+See the **[Complete CMS Comparison Guide](../README.md)** for a detailed comparison of Sanity, Payload, Strapi, and Contentful, including:
+- Feature comparison tables
+- Cost analysis
+- Use case recommendations
+- Migration paths
+- Decision matrix
+
+**Quick comparison:** Sanity excels at localization and real-time collaboration with a managed infrastructure approach, making it ideal for multi-language e-commerce on Medusa v2.
 
 ## Troubleshooting Quick Reference
 

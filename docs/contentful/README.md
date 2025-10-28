@@ -333,58 +333,18 @@ export async function getServerSideProps({ params }) {
 
 **Our Recommendation**: Use **Pattern 3** for product pages (SEO critical), **Pattern 1** for dynamic interactions.
 
-## Comparison: Contentful vs Strapi vs Sanity vs Payload
+## Comparison with Other CMS Options
 
-| Feature | Contentful | Strapi v4 | Sanity | Payload |
-|---------|-----------|-----------|--------|---------|
-| **Medusa Version** | v1 (v2 updated) | v1 (legacy) | v2 (latest) | v2 (latest) |
-| **Deployment** | SaaS (Contentful Cloud) | Self-hosted | External SaaS | Embedded in Next.js |
-| **Data Storage** | Contentful Cloud | Your PostgreSQL | Sanity Cloud | Your PostgreSQL |
-| **Admin UI** | Contentful Web App | Strapi Admin Panel | Sanity Studio | Payload Admin |
-| **Pricing** | Usage-based (starts free) | Free (self-hosted) | Free tier + usage | Free (self-hosted) |
-| **Open Source** | ❌ Proprietary | ✅ Yes (FOSS) | ❌ Proprietary | ✅ Yes (MIT) |
-| **Vendor Lock-in** | ⚠️ Yes (data export available) | ✅ No | ❌ Yes | ✅ No |
-| **Localization** | ✅ Built-in, enterprise-grade | 🟡 Plugin-based | ✅ Built-in | 🟡 Custom implementation |
-| **Content Model** | Full CMS + localization | Full CMS capabilities | Lightweight schemas | Comprehensive |
-| **Data Fetching** | Direct or proxy | Dual fetch or proxy | Dual fetch | Single via Medusa link |
-| **Sync Direction** | ✅ Two-way (with webhooks) | 🟡 Medusa → Strapi (limited back) | 🟡 Medusa → Sanity (one-way) | ✅ Medusa ↔ Payload (two-way) |
-| **Real-time Collab** | Yes | No (can add plugins) | Yes | No |
-| **Preview Mode** | ✅ Built-in | 🟡 Custom | ✅ Built-in | ✅ Built-in |
-| **Media Management** | Enterprise CDN + transforms | Local or S3 | Sanity CDN + transforms | Local or S3 |
-| **Workflows** | ✅ Advanced (roles, approvals) | Basic | 🟡 Custom | Basic |
-| **GraphQL** | ✅ Native | Plugin | ✅ Native | REST only |
-| **Setup Complexity** | Low (SaaS signup) | High (two servers) | Medium (external account) | Medium (embedded) |
-| **Maintenance** | ✅ Managed (no ops) | High (two systems) | Low (managed) | Medium (integrated) |
-| **Community Support** | Official + active | Limited (legacy) | Active | Active |
-| **Best For** | Enterprise, localization | FOSS requirement | Modern v2 projects | Integrated admin |
+**Looking to compare Contentful with other CMS options?**
 
-### When to Choose Each
+See the **[Complete CMS Comparison Guide](../README.md)** for a detailed comparison of Contentful, Payload, Sanity, and Strapi, including:
+- Feature comparison tables
+- Cost analysis
+- Use case recommendations
+- Migration paths
+- Decision matrix
 
-**Choose Contentful if**:
-- ✅ You need enterprise-grade localization
-- ✅ You want managed infrastructure (no DevOps)
-- ✅ You need advanced workflows and roles
-- ✅ Budget allows for usage-based pricing
-- ✅ You value data portability (can export)
-- ✅ You need global CDN for content delivery
-
-**Choose Strapi if**:
-- ✅ You're on Medusa v1 and need FOSS
-- ✅ You want full control (self-hosted)
-- ✅ You have DevOps resources
-- ✅ No budget for CMS licensing
-
-**Choose Sanity if**:
-- ✅ You're on Medusa v2
-- ✅ You need real-time collaboration
-- ✅ You want lightweight, flexible schemas
-- ✅ You prefer managed infrastructure
-
-**Choose Payload if**:
-- ✅ You're on Medusa v2
-- ✅ You want integrated admin panel
-- ✅ You need full control (self-hosted)
-- ✅ You prefer TypeScript-first development
+**Quick comparison:** Contentful offers enterprise-grade localization and fully managed infrastructure with advanced workflows, making it ideal for international e-commerce with budget for premium features. However, it comes with vendor lock-in and usage-based costs that can scale significantly.
 
 ## Troubleshooting Quick Reference
 

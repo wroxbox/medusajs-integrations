@@ -491,6 +491,15 @@ If you're committed to content excellence:
    - Expand to additional content types
    - Integrate with other tools
 
+## Comparing Payload with Other CMS Options
+
+For a comprehensive comparison of Payload vs. Sanity, Strapi, and Contentful, including detailed feature tables, cost analysis, and use case recommendations, see the **[Complete CMS Comparison Guide](../README.md)**.
+
+**Quick Summary:**
+- **vs Sanity**: Payload = self-hosted + single fetch; Sanity = SaaS + localization + dual fetch
+- **vs Strapi**: Payload = Medusa v2 + embedded; Strapi = Medusa v1 + separate servers
+- **vs Contentful**: Payload = open source + control; Contentful = enterprise localization + managed
+
 ## Decision Matrix
 
 Use this to decide if Payload integration is right for you:

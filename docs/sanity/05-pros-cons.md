@@ -480,36 +480,15 @@ Issue: Product not showing Sanity content
 
 ---
 
-## Comparison Tables
+## Comparing Sanity with Other CMS Options
 
-### Sanity vs Payload Integration
+For a comprehensive comparison of Sanity vs. Payload, Strapi, and Contentful, including detailed feature tables, cost analysis, and use case recommendations, see the **[Complete CMS Comparison Guide](../README.md)**.
 
-| Feature | Sanity | Payload |
-|---------|--------|---------|
-| **Hosting** | External SaaS | Self-hosted (embedded) |
-| **Cost** | Usage-based ($0-$500+) | Free (hosting costs only) |
-| **Localization** | Native support | Custom implementation |
-| **Data Fetching** | Dual (Medusa + Sanity) | Single (via Medusa link) |
-| **Real-time Collab** | Yes | No |
-| **Admin UI** | Sanity Studio | Payload Admin |
-| **Content Model** | Lightweight (specs, addons) | Rich (images, SEO, etc.) |
-| **Setup Complexity** | Medium | Medium |
-| **Vendor Lock-in** | Yes | No |
-| **CDN** | Included | DIY |
-| **Version Control** | Built-in | Limited |
-
-### Sanity vs Medusa-Only
-
-| Feature | Sanity + Medusa | Medusa Only |
-|---------|----------------|-------------|
-| **Content Features** | Excellent | Basic |
-| **Localization** | Native | Manual |
-| **Complexity** | Higher | Lower |
-| **Cost** | Higher | Lower |
-| **Team Independence** | Yes | No |
-| **Performance** | Dual fetch | Single fetch |
-| **Scalability** | Excellent | Good |
-| **Maintenance** | More | Less |
+**Quick Summary:**
+- **vs Payload**: Sanity = SaaS + localization + dual fetch; Payload = self-hosted + single fetch
+- **vs Strapi**: Sanity = Medusa v2 + managed; Strapi = Medusa v1 + self-hosted + 2 systems
+- **vs Contentful**: Sanity = lightweight + GROQ; Contentful = enterprise + webhooks + more expensive
+- **vs Medusa-Only**: More features and complexity vs. simpler setup
 
 ---
 

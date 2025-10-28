@@ -447,30 +447,20 @@ When a customer views a product page:
    - Field mappings need updating
    - Sync logic may need adjustment
 
-## Comparison: Strapi vs Sanity vs Payload
+## Comparison with Other CMS Options
 
-| Feature | Strapi v4 | Sanity | Payload |
-|---------|-----------|--------|---------|
-| **Medusa Version** | v1 (legacy) | v2 (latest) | v2 (latest) |
-| **Deployment** | Self-hosted | External SaaS | Embedded in Next.js |
-| **Data Storage** | Your PostgreSQL | Sanity Cloud | Your PostgreSQL |
-| **Admin UI** | Strapi Admin Panel | Sanity Studio | Payload Admin |
-| **Pricing** | Free (self-hosted) | Free tier + usage-based | Free (self-hosted) |
-| **Open Source** | ✅ Yes (FOSS) | ❌ Proprietary | ✅ Yes (MIT) |
-| **Vendor Lock-in** | ✅ No | ❌ Yes | ✅ No |
-| **Content Model** | Full CMS capabilities | Lightweight (specs, addons) | Comprehensive |
-| **Localization** | Plugin-based | Built-in | Custom implementation |
-| **Data Fetching** | Dual fetch or proxy | Dual fetch | Single via Medusa link |
-| **Sync Direction** | Medusa → Strapi (limited back) | Medusa → Sanity (one-way) | Medusa ↔ Payload (two-way) |
-| **Real-time Collab** | No (can add plugins) | Yes | No |
-| **Setup Complexity** | High (two servers) | Medium (external account) | Medium (embedded) |
-| **Maintenance** | High (two systems) | Low (managed) | Medium (integrated) |
-| **Community Support** | Limited (legacy) | Active | Active |
-| **Migration Path** | Difficult to v2 | Direct v2 integration | Direct v2 integration |
+**Looking to compare Strapi with other CMS options?**
 
-**Choose Strapi if**: You're on Medusa v1, need full FOSS control, have DevOps resources, and want battle-tested CMS features.  
-**Choose Sanity if**: You need localization, real-time collaboration, managed infrastructure, and are on Medusa v2.  
-**Choose Payload if**: You want integrated admin, full control, self-hosting, and are on Medusa v2.
+See the **[Complete CMS Comparison Guide](../README.md)** for a detailed comparison of Strapi, Payload, Sanity, and Contentful, including:
+- Feature comparison tables
+- Cost analysis
+- Use case recommendations
+- Migration paths
+- Decision matrix
+
+**Quick comparison:** Strapi is the go-to FOSS solution for Medusa v1 with comprehensive CMS features, but requires significant DevOps resources. For new Medusa v2 projects, consider Payload or Sanity instead.
+
+**⚠️ Important:** This integration is built for Medusa v1. Migrating to Medusa v2 requires significant effort. See the [comparison guide](../README.md) for modern alternatives on v2.
 
 ## Troubleshooting Quick Reference
 

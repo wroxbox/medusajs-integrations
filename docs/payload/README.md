@@ -275,6 +275,19 @@ When a customer views a product:
    - PIM system better fit
    - Bulk operations focus
 
+## Comparison with Other CMS Options
+
+**Looking to compare Payload with other CMS options?**
+
+See the **[Complete CMS Comparison Guide](../README.md)** for a detailed comparison of Payload, Sanity, Strapi, and Contentful, including:
+- Feature comparison tables
+- Cost analysis
+- Use case recommendations
+- Migration paths
+- Decision matrix
+
+**Quick comparison:** Payload offers the best integration with Medusa v2 through embedded architecture and single data fetching, making it ideal for teams wanting full control without vendor lock-in.
+
 ## Troubleshooting Quick Reference
 
 ### Product not syncing to Payload?

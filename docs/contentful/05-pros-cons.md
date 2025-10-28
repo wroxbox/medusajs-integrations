@@ -647,57 +647,15 @@ Estimated effort:
 
 ---
 
-## Comparison with Alternatives
+## Comparing Contentful with Other CMS Options
 
-### vs. Strapi
+For a comprehensive comparison of Contentful vs. Payload, Sanity, and Strapi, including detailed feature tables, cost analysis, and use case recommendations, see the **[Complete CMS Comparison Guide](../README.md)**.
 
-| Aspect | Contentful | Strapi | Winner |
-|--------|-----------|--------|--------|
-| **Open Source** | ❌ Proprietary | ✅ FOSS | Strapi |
-| **Self-Hosting** | ❌ No | ✅ Yes | Strapi |
-| **Cost** | 💰💰💰 High | 💰 Infrastructure only | Strapi |
-| **Localization** | ⭐⭐⭐⭐⭐ Native | ⭐⭐⭐ Plugin | Contentful |
-| **DevOps** | ⭐⭐⭐⭐⭐ None | ⭐⭐ High | Contentful |
-| **Performance** | ⭐⭐⭐⭐⭐ CDN | ⭐⭐⭐ Self-managed | Contentful |
-| **Flexibility** | ⭐⭐⭐ Good | ⭐⭐⭐⭐⭐ Full control | Strapi |
-| **Lock-In** | ❌ High | ✅ None | Strapi |
-
-**Choose Contentful if:** Enterprise budget, need localization, want managed service  
-**Choose Strapi if:** Need FOSS, want full control, have DevOps resources
-
----
-
-### vs. Sanity
-
-| Aspect | Contentful | Sanity | Winner |
-|--------|-----------|--------|--------|
-| **Localization** | ⭐⭐⭐⭐⭐ Native | ⭐⭐⭐⭐ Good | Contentful |
-| **Two-Way Sync** | ✅ Yes (webhooks) | ❌ One-way only | Contentful |
-| **Pricing** | 💰💰💰 Expensive | 💰💰 Moderate | Sanity |
-| **GraphQL** | ✅ Native | ✅ GROQ (similar) | Tie |
-| **Real-Time** | ❌ No | ✅ Yes | Sanity |
-| **Medusa Version** | v1 + v2 | v2 only | Contentful |
-| **Schema Flexibility** | ⭐⭐⭐ Good | ⭐⭐⭐⭐⭐ Excellent | Sanity |
-
-**Choose Contentful if:** Need webhooks, prefer traditional CMS, strong localization  
-**Choose Sanity if:** Want real-time, prefer lightweight, need schema flexibility
-
----
-
-### vs. Payload
-
-| Aspect | Contentful | Payload | Winner |
-|--------|-----------|--------|--------|
-| **Deployment** | ☁️ SaaS only | 🖥️ Self-hosted | Depends |
-| **Localization** | ⭐⭐⭐⭐⭐ Enterprise | ⭐⭐⭐ Custom | Contentful |
-| **Open Source** | ❌ No | ✅ MIT License | Payload |
-| **Cost** | 💰💰💰 High | 💰 Infrastructure only | Payload |
-| **Integration** | Two systems | Embedded | Payload |
-| **Admin UI** | ⭐⭐⭐⭐⭐ Polished | ⭐⭐⭐⭐ Good | Contentful |
-| **Medusa Version** | v1 + v2 | v2 only | Contentful |
-
-**Choose Contentful if:** Want managed, need enterprise localization, prefer SaaS  
-**Choose Payload if:** Want open source, prefer embedded, need full control
+**Quick Summary:**
+- **vs Strapi**: Contentful = managed + enterprise localization + expensive; Strapi = FOSS + self-hosted + complex
+- **vs Sanity**: Contentful = webhooks + traditional CMS; Sanity = real-time + flexible + moderate cost
+- **vs Payload**: Contentful = SaaS + enterprise features; Payload = open source + embedded + cheaper
+- **vs Medusa Only**: More enterprise features and localization vs. simpler, cheaper setup
 
 ---
 

@@ -487,67 +487,17 @@ Content team updates in Strapi:
 
 ---
 
-## Comparison Matrix
+## Comparing Strapi with Other CMS Options
 
-### vs. Medusa Only (No CMS)
+For a comprehensive comparison of Strapi vs. Payload, Sanity, and Contentful, including detailed feature tables, cost analysis, and use case recommendations, see the **[Complete CMS Comparison Guide](../README.md)**.
 
-| Aspect | Medusa Only | Medusa + Strapi | Winner |
-|--------|-------------|-----------------|--------|
-| Setup Time | 1 day | 3-5 days | Medusa Only |
-| Cost | $65/month | $120/month | Medusa Only |
-| Maintenance | Low | High | Medusa Only |
-| Content Features | Basic | Rich | **Strapi** |
-| Team Independence | No | Yes | **Strapi** |
-| Performance | Fast | Slower | Medusa Only |
-| Scalability | Simple | Complex | Medusa Only |
-| Open Source | Yes | Yes | Tie |
+**Quick Summary:**
+- **vs Medusa Only**: More CMS features and team independence vs. simpler, faster, cheaper
+- **vs Sanity**: Strapi = Medusa v1 + FOSS + self-hosted; Sanity = Medusa v2 + managed + localization
+- **vs Payload**: Strapi = Medusa v1 + separate servers; Payload = Medusa v2 + embedded + simpler
+- **vs Contentful**: Strapi = free + self-hosted; Contentful = enterprise features + expensive
 
-**Use Medusa Only if:** Content is simple, small team, tight budget.
-
-**Use Medusa + Strapi if:** Content is key differentiator, dedicated content team, budget for infrastructure.
-
-### vs. Sanity Integration (Medusa v2)
-
-| Aspect | Strapi | Sanity | Winner |
-|--------|--------|--------|--------|
-| Medusa Version | v1 only | v2 ✓ | **Sanity** |
-| Cost | Free (infra only) | Free tier + usage | Depends |
-| Self-Hosted | ✓ Yes | ✗ SaaS only | **Strapi** |
-| Open Source | ✓ Yes | ✗ Proprietary | **Strapi** |
-| Maintenance | High | Low | **Sanity** |
-| Setup Complexity | High | Medium | **Sanity** |
-| Content Features | Very Rich | Rich | **Strapi** |
-| Localization | Plugin | Built-in | **Sanity** |
-| Real-time Collab | Plugin | Built-in | **Sanity** |
-| Data Control | Full | Limited | **Strapi** |
-| Community | Small | Large | **Sanity** |
-| Future Support | Limited | Active | **Sanity** |
-
-**Use Strapi if:** On Medusa v1, need FOSS, want self-hosting.
-
-**Use Sanity if:** On Medusa v2, want ease of use, prefer managed service.
-
-### vs. Payload Integration (Medusa v2)
-
-| Aspect | Strapi | Payload | Winner |
-|--------|--------|---------|--------|
-| Medusa Version | v1 only | v2 ✓ | **Payload** |
-| Deployment | Separate server | Embedded in Next.js | **Payload** |
-| Database | Separate PostgreSQL | Shared with Medusa | **Payload** |
-| Cost | 2 servers | 1 server | **Payload** |
-| Open Source | ✓ Yes | ✓ Yes (MIT) | Tie |
-| Self-Hosted | ✓ Yes | ✓ Yes | Tie |
-| Setup Complexity | High | Medium | **Payload** |
-| Maintenance | High (2 systems) | Medium (1 system) | **Payload** |
-| Data Fetching | Dual fetch | Single via link | **Payload** |
-| Content Features | Very Rich | Rich | **Strapi** |
-| Admin UI | Mature | Modern | **Payload** |
-| TypeScript | v4 (older) | Native TypeScript | **Payload** |
-| Community (v2) | None | Growing | **Payload** |
-
-**Use Strapi if:** On Medusa v1, prefer proven solution, want maximum CMS features.
-
-**Use Payload if:** On Medusa v2, want integrated architecture, prefer TypeScript-native.
+**⚠️ Important:** Strapi is for Medusa v1. For new Medusa v2 projects, see the [comparison guide](../README.md) for modern alternatives.
 
 ---
 
