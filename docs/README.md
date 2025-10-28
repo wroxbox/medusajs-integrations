@@ -394,7 +394,7 @@ Found an issue or want to add information about a new CMS integration?
 
 ---
 
-**Last Updated:** January 2025
+**Last Updated:** October 28, 2025
 
 **Note:** This comparison is based on current versions as of documentation date. Features and pricing may change. Always refer to official documentation for the most up-to-date information.
 

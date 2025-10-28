@@ -386,7 +386,7 @@ yarn add medusa-plugin-strapi-ts
 
 ---
 
-**Last Updated**: October 27, 2025  
+**Last Updated**: October 28, 2025  
 **Validated Against**:
 - Original repo: [SGFGOV/medusa-strapi-repo](https://github.com/SGFGOV/medusa-strapi-repo) (719 commits)
 - Fork repo: [dannycdannydo/medusa-strapi-repo](https://github.com/dannycdannydo/medusa-strapi-repo) (764 commits, +45)
